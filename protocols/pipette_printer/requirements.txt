@@ -1,0 +1,14 @@
+aionotify==0.2.0
+anyio==3.3.0
+attrs==21.4.0
+idna==3.3
+jsonschema==3.0.2
+numpy==1.22.2
+opentrons==5.0.0
+opentrons-shared-data==5.0.0
+pydantic==1.8.2
+pyrsistent==0.18.1
+pyserial==3.5
+six==1.16.0
+sniffio==1.2.0
+typing-extensions==3.10.0.0
