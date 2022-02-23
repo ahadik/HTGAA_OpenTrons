@@ -15,7 +15,7 @@ def run(protocol: protocol_api.ProtocolContext):
     # labware
     tiprack = protocol.load_labware('opentrons_96_tiprack_300ul', '1')
     palette = protocol.load_labware('usascientific_12_reservoir_22ml', '2')
-    canvas = protocol.load_labware('biorad_96_wellplate_200ul_pcr', '5')
+    canvas = protocol.load_labware('nest_96_wellplate_200ul_flat', '5')
 
     # pipettes
     left_pipette = protocol.load_instrument(
