@@ -145,9 +145,10 @@ def run(protocol: protocol_api.ProtocolContext):
 
     # commands
     i = 0
-    color_well = palette[list(palette_map.values())[i]]
     for digit in current_time:
+        color_well = palette[list(palette_map.values())[i]]
         paint_digit(digit, (i * 3) + 1, color_well, left_pipette, canvas)
+        i += 1
 
     
     
