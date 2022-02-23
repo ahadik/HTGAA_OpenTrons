@@ -31,7 +31,7 @@ def get_wells_for_digit(digit, column_offset):
         wells += get_rows(column_offset + 1, 1, 8)
         wells += get_rows(column_offset, 2, 2)
         wells += get_rows(column_offset, 8, 8)
-        wells += get_rows(column_offset + 2, 1, 1)
+        wells += get_rows(column_offset + 2, 8, 8)
         return wells
     elif digit == 2:
         wells += get_rows(column_offset, 1, 1)
@@ -72,7 +72,7 @@ def get_wells_for_digit(digit, column_offset):
         wells += get_rows(column_offset + 1, 4, 4)
 
         wells += get_rows(column_offset, 8, 8)
-        wells += get_rows(column_offset, 8, 8)
+        wells += get_rows(column_offset+1, 8, 8)
         return wells
     elif digit == 6:
         wells += get_rows(column_offset, 1, 8)
