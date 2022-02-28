@@ -1,9 +1,9 @@
-from opentrons import protocol_api
+from opentrons import protocol_api, types
 
 #input AG23
-print('Enter your two-letter initials (in caps) and two-digit graduation year:')
-input_data = input()
-print(input_data)
+#print('Enter your two-letter initials (in caps) and two-digit graduation year:')
+input_data = 'AG23'
+#print(input_data)
 
 
 #appended to template provided by adding 3x8 rows/ column alphabet mapping
@@ -330,6 +330,8 @@ def paint_digit(digit, column_offset, color_well, pipette, canvas):
 # protocol run function. the part after the colon lets your editor know
 # where to look for autocomplete suggestions
 def run(protocol: protocol_api.ProtocolContext):
+
+    protocol.comment('Message is: ' + input_data)
 
     # labware
     tiprack = protocol.load_labware('opentrons_96_tiprack_300ul', '1')
