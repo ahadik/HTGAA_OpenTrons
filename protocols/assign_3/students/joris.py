@@ -1,10 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
-# from opentrons import protocol_api
+from opentrons import protocol_api
 
 # metadata
 metadata = {
@@ -30,8 +24,8 @@ def run(protocol: protocol_api.ProtocolContext):
         'green': 'A1',
         'blue': 'A2',
         'red': 'A3',
-        'yellow': 'A4'
-        'dilutant' : 'A12'
+        'yellow': 'A4',
+        'dilutant': 'A6'
         
     }
 
@@ -92,10 +86,10 @@ def run(protocol: protocol_api.ProtocolContext):
     left_pipette.dispense(50, canvas['D9'])
     left_pipette.dispense(50, canvas['D10'])
     left_pipette.dispense(50, canvas['E10'])
-    left_pipette.mix(4, 98, canvas.['E9'])
-    left_pipette.mix(4, 98, canvas.['D9'])
-    left_pipette.mix(4, 98, canvas.['D10'])
-    left_pipette.mix(4, 98, canvas.['E10'])
+    left_pipette.mix(4, 98, canvas['E9'])
+    left_pipette.mix(4, 98, canvas['D9'])
+    left_pipette.mix(4, 98, canvas['D10'])
+    left_pipette.mix(4, 98, canvas['E10'])
     left_pipette.drop_tip()
 
     #green
@@ -120,7 +114,6 @@ def run(protocol: protocol_api.ProtocolContext):
 
     #blend_aquamarine
 
-    left_pipette.pick_up_tip()
     left_pipette.transfer(
         [50, 25, 12],
         canvas['A1'],
@@ -137,9 +130,7 @@ def run(protocol: protocol_api.ProtocolContext):
         [50, 25, 12],
         canvas['H7'],
         [canvas.wells_by_name()[well_name] for well_name in ['H8', 'H9', 'H10']])
-    left_pipette.drop_tip()
 
-    left_pipette.pick_up_tip()
     left_pipette.transfer(
         [50, 25, 12],
         canvas['H1'],
@@ -156,22 +147,24 @@ def run(protocol: protocol_api.ProtocolContext):
         [50, 25, 12],
         canvas['A7'],
         [canvas.wells_by_name()[well_name] for well_name in ['A8', 'A9', 'A10']])
-    left_pipette.mix(4, 98, canvas.['A2'])
-    left_pipette.mix(4, 98, canvas.['A3'])
-    left_pipette.mix(4, 98, canvas.['A4'])
-    left_pipette.mix(4, 98, canvas.['A5'])
-    left_pipette.mix(4, 98, canvas.['A8'])
-    left_pipette.mix(4, 98, canvas.['A9'])
-    left_pipette.mix(4, 98, canvas.['A10'])
-    left_pipette.mix(4, 98, canvas.['A11'])
-    left_pipette.mix(4, 98, canvas.['H2'])
-    left_pipette.mix(4, 98, canvas.['H3'])
-    left_pipette.mix(4, 98, canvas.['H4'])
-    left_pipette.mix(4, 98, canvas.['H5'])
-    left_pipette.mix(4, 98, canvas.['H8'])
-    left_pipette.mix(4, 98, canvas.['H9'])
-    left_pipette.mix(4, 98, canvas.['H10'])
-    left_pipette.mix(4, 98, canvas.['H11'])
+    
+    left_pipette.pick_up_tip()
+    left_pipette.mix(4, 98, canvas['A2'])
+    left_pipette.mix(4, 98, canvas['A3'])
+    left_pipette.mix(4, 98, canvas['A4'])
+    left_pipette.mix(4, 98, canvas['A5'])
+    left_pipette.mix(4, 98, canvas['A8'])
+    left_pipette.mix(4, 98, canvas['A9'])
+    left_pipette.mix(4, 98, canvas['A10'])
+    left_pipette.mix(4, 98, canvas['A11'])
+    left_pipette.mix(4, 98, canvas['H2'])
+    left_pipette.mix(4, 98, canvas['H3'])
+    left_pipette.mix(4, 98, canvas['H4'])
+    left_pipette.mix(4, 98, canvas['H5'])
+    left_pipette.mix(4, 98, canvas['H8'])
+    left_pipette.mix(4, 98, canvas['H9'])
+    left_pipette.mix(4, 98, canvas['H10'])
+    left_pipette.mix(4, 98, canvas['H11'])
     left_pipette.drop_tip()
 
     #greentopup
@@ -197,7 +190,6 @@ def run(protocol: protocol_api.ProtocolContext):
     #BlendFireball
     #water/dilutant
 
-    left_pipette.pick_up_tip()
     water_volumes = [
             0, 60, 45, 30, 30, 45, 60, 0,
             0, 50, 33, 25, 13, 33, 50, 0,
@@ -213,10 +205,8 @@ def run(protocol: protocol_api.ProtocolContext):
             0, 0, 0, 0, 0, 0, 0, 0,
           ]
 
-        left_pipette.distribute(water_volumes, reservoir['A12'], canvas.wells())
-        left_pipette.drop_tip()
+    left_pipette.distribute(water_volumes, palette['A12'], canvas.wells())
 
-    left_pipette.pick_up_tip()
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['C8', 'C9', 'C10', 'C11']],
@@ -357,9 +347,7 @@ def run(protocol: protocol_api.ProtocolContext):
         [canvas.wells_by_name()[well_name] for well_name in ['E8', 'E9', 'E10', 'E11']],
         canvas['E1'])
     left_pipette.mix(4, 80)
-    left_pipette.drop_tip()
 
-    left_pipette.pick_up_tip()
     left_pipette.consolidate(
         [10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['G8', 'G9']],
@@ -431,7 +419,6 @@ def run(protocol: protocol_api.ProtocolContext):
         [canvas.wells_by_name()[well_name] for well_name in ['B8', 'B9']],
         canvas['B1'])
     left_pipette.mix(4, 30)
-    left_pipette.drop_tip()
 
     #yellow_topup
     left_pipette.pick_up_tip()
@@ -471,10 +458,10 @@ def run(protocol: protocol_api.ProtocolContext):
     left_pipette.dispense(35, canvas['E9'])
     left_pipette.dispense(35, canvas['D9'])
 
-    left_pipette.mix(4, 90, canvas.['E9'])
-    left_pipette.mix(4, 90, canvas.['D9'])
-    left_pipette.mix(4, 90, canvas.['D10'])
-    left_pipette.mix(4, 90, canvas.['E10'])
+    left_pipette.mix(4, 90, canvas['E9'])
+    left_pipette.mix(4, 90, canvas['D9'])
+    left_pipette.mix(4, 90, canvas['D10'])
+    left_pipette.mix(4, 90, canvas['E10'])
     left_pipette.drop_tip()
 
     #end
