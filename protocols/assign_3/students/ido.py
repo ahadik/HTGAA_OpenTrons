@@ -40,7 +40,7 @@ def run(protocol: protocol_api.ProtocolContext):
 
     COLS = 12
     ROWS = "ABCDEFGH"
-    MAX_VOL = 280
+    MAX_VOL = 300
 
     red_pal = palette[color['red']]
     green_pal = palette[color['green']]
