@@ -67,11 +67,13 @@ def run(protocol: protocol_api.ProtocolContext):
                 last_color = 'yellow'
 
     for color in instructions.keys():
-        left_pipette.pick_up_tip()
-        for well in instructions[color]:
-            left_pipette.aspirate(100, color_map[color])
-            left_pipette.dispense(100, canvas[well])
-        left_pipette.drop_tip()
+        if (len(instructions[color])):
+            left_pipette.distribute(100, color_map[color], [canvas.wells_by_name()[well_name] for well_name in instructions[color]])
+        #left_pipette.pick_up_tip()
+        #for well in instructions[color]:
+            #left_pipette.aspirate(100, color_map[color])
+            #left_pipette.dispense(100, canvas[well])
+        #left_pipette.drop_tip()
 
     
     # for well, color in pattern:
