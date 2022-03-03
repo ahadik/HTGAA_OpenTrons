@@ -21,6 +21,8 @@ def run(protocol: protocol_api.ProtocolContext):
     left_pipette = protocol.load_instrument(
          'p300_single', 'left', tip_racks=[tiprack])
 
+    print(canvas.wells())
+
     # commands
     left_pipette.pick_up_tip()
     left_pipette.aspirate(100, palette['A1'])

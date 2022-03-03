@@ -36,4 +36,6 @@ def run(protocol: protocol_api.ProtocolContext):
     # make sure you are pipetting FROM the palette TO the canvas
     # use the color mpa for easy well reference:
     # palette[color['green']] == palette['A1']
-    
+    def run(protocol: protocol_api.ProtocolContext):
+        palette = protocol.load_labware('usascientific_12_reservoir_22ml', '2')
+        print(palette.wells_by_name())
