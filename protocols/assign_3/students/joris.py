@@ -211,215 +211,234 @@ def run(protocol: protocol_api.ProtocolContext):
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['C8', 'C9', 'C10', 'C11']],
         canvas['C7'])
-    left_pipette.mix(4, 30)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['C8', 'C9', 'C10', 'C11']],
         canvas['C6'])
-    left_pipette.mix(4, 30)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['C8', 'C9', 'C10', 'C11']],
         canvas['C5'])
-    left_pipette.mix(4, 40)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['C8', 'C9', 'C10', 'C11']],
         canvas['C4'])
-    left_pipette.mix(4, 50)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['C8', 'C9', 'C10', 'C11']],
         canvas['C3'])
-    left_pipette.mix(4, 60)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['C8', 'C9', 'C10', 'C11']],
         canvas['C2'])
-    left_pipette.mix(4, 70)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['C8', 'C9', 'C10', 'C11']],
         canvas['C1'])
-    left_pipette.mix(4, 80)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['F8', 'F9', 'F10', 'F11']],
         canvas['F7'])
-    left_pipette.mix(4, 30)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['F8', 'F9', 'F10', 'F11']],
         canvas['F6'])
-    left_pipette.mix(4, 30)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['F8', 'F9', 'F10', 'F11']],
         canvas['F5'])
-    left_pipette.mix(4, 40)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['F8', 'F9', 'F10', 'F11']],
         canvas['F4'])
-    left_pipette.mix(4, 50)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['F8', 'F9', 'F10', 'F11']],
         canvas['F3'])
-    left_pipette.mix(4, 60)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['F8', 'F9', 'F10', 'F11']],
         canvas['F2'])
-    left_pipette.mix(4, 70)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['F8', 'F9', 'F10', 'F11']],
         canvas['F1'])
-    left_pipette.mix(4, 80)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['D8', 'D9', 'D10', 'D11']],
         canvas['D7'])
-    left_pipette.mix(4, 30)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['D8', 'D9', 'D10', 'D11']],
         canvas['D6'])
-    left_pipette.mix(4, 30)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['D8', 'D9', 'D10', 'D11']],
         canvas['D5'])
-    left_pipette.mix(4, 40)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['D8', 'D9', 'D10', 'D11']],
         canvas['D4'])
-    left_pipette.mix(4, 50)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['D8', 'D9', 'D10', 'D11']],
         canvas['D3'])
-    left_pipette.mix(4, 60)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['D8', 'D9', 'D10', 'D11']],
         canvas['D2'])
-    left_pipette.mix(4, 70)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['D8', 'D9', 'D10', 'D11']],
         canvas['D1'])
-    left_pipette.mix(4, 80) 
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['E8', 'E9', 'E10', 'E11']],
         canvas['E7'])
-    left_pipette.mix(4, 30)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['E8', 'E9', 'E10', 'E11']],
         canvas['E6'])
-    left_pipette.mix(4, 30)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['E8', 'E9', 'E10', 'E11']],
         canvas['E5'])
-    left_pipette.mix(4, 40)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['E8', 'E9', 'E10', 'E11']],
         canvas['E4'])
-    left_pipette.mix(4, 50)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['E8', 'E9', 'E10', 'E11']],
         canvas['E3'])
-    left_pipette.mix(4, 60)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['E8', 'E9', 'E10', 'E11']],
         canvas['E2'])
-    left_pipette.mix(4, 70)
     left_pipette.consolidate(
         [10, 10, 10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['E8', 'E9', 'E10', 'E11']],
         canvas['E1'])
-    left_pipette.mix(4, 80)
 
     left_pipette.consolidate(
         [10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['G8', 'G9']],
         canvas['G7'])
-    left_pipette.mix(4, 30)
     left_pipette.consolidate(
         [10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['G8', 'G9']],
         canvas['G6'])
-    left_pipette.mix(4, 30)
     left_pipette.consolidate(
         [10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['G8', 'G9']],
         canvas['G5'])
-    left_pipette.mix(4, 30)
     left_pipette.consolidate(
         [10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['G8', 'G9']],
         canvas['G4'])
-    left_pipette.mix(4, 30)
     left_pipette.consolidate(
         [10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['G8', 'G9']],
         canvas['G3'])
-    left_pipette.mix(4, 30)
     left_pipette.consolidate(
         [10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['G8', 'G9']],
         canvas['G2'])
-    left_pipette.mix(4, 30)
     left_pipette.consolidate(
         [10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['G8', 'G9']],
         canvas['G1'])
-    left_pipette.mix(4, 30)
 
     left_pipette.consolidate(
         [10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['B8', 'B9']],
         canvas['B7'])
-    left_pipette.mix(4, 30)
     left_pipette.consolidate(
         [10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['B8', 'B9']],
         canvas['B6'])
-    left_pipette.mix(4, 30)
     left_pipette.consolidate(
         [10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['B8', 'B9']],
         canvas['B5'])
-    left_pipette.mix(4, 30)
     left_pipette.consolidate(
         [10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['B8', 'B9']],
         canvas['B4'])
-    left_pipette.mix(4, 30)
     left_pipette.consolidate(
         [10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['B8', 'B9']],
         canvas['B3'])
-    left_pipette.mix(4, 30)
     left_pipette.consolidate(
         [10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['B8', 'B9']],
         canvas['B2'])
-    left_pipette.mix(4, 30)
     left_pipette.consolidate(
         [10, 10],
         [canvas.wells_by_name()[well_name] for well_name in ['B8', 'B9']],
         canvas['B1'])
-    left_pipette.mix(4, 30)
-
+    
+    left_pipette.pick_up_tip()
+    left_pipette.mix(4, 30, canvas['B7'])
+    left_pipette.mix(4, 30, canvas['B6'])
+    left_pipette.mix(4, 30, canvas['B5'])
+    left_pipette.mix(4, 30, canvas['B4'])
+    left_pipette.mix(4, 30, canvas['B3'])
+    left_pipette.mix(4, 30, canvas['B2'])
+    left_pipette.mix(4, 30, canvas['B1'])
+    left_pipette.drop_tip()
+    
+    left_pipette.pick_up_tip()
+    left_pipette.mix(4, 30, canvas['C7'])
+    left_pipette.mix(4, 30, canvas['C6'])
+    left_pipette.mix(4, 30, canvas['C5'])
+    left_pipette.mix(4, 30, canvas['C5']) 
+    left_pipette.mix(4, 30, canvas['C4']) 
+    left_pipette.mix(4, 30, canvas['C3']) 
+    left_pipette.mix(4, 30, canvas['C2']) 
+    left_pipette.mix(4, 30, canvas['C1'])
+    left_pipette.drop_tip()
+    
+    left_pipette.pick_up_tip()
+    left_pipette.mix(4, 30, canvas['D7']) 
+    left_pipette.mix(4, 30, canvas['D6']) 
+    left_pipette.mix(4, 30, canvas['D5']) 
+    left_pipette.mix(4, 30, canvas['D4']) 
+    left_pipette.mix(4, 30, canvas['D3']) 
+    left_pipette.mix(4, 30, canvas['D2']) 
+    left_pipette.mix(4, 30, canvas['D1'])
+    left_pipette.drop_tip()
+    
+    left_pipette.pick_up_tip()
+    left_pipette.mix(4, 30, canvas['E7'])
+    left_pipette.mix(4, 30, canvas['E6'])
+    left_pipette.mix(4, 30, canvas['E5'])
+    left_pipette.mix(4, 30, canvas['E4'])
+    left_pipette.mix(4, 30, canvas['E3'])
+    left_pipette.mix(4, 30, canvas['E2'])
+    left_pipette.mix(4, 30, canvas['E1'])
+    left_pipette.drop_tip()
+    
+    left_pipette.pick_up_tip()
+    left_pipette.mix(4, 30, canvas['F7'])
+    left_pipette.mix(4, 30, canvas['F6'])
+    left_pipette.mix(4, 30, canvas['F5'])
+    left_pipette.mix(4, 30, canvas['F4'])
+    left_pipette.mix(4, 30, canvas['F3'])
+    left_pipette.mix(4, 30, canvas['F2'])
+    left_pipette.mix(4, 30, canvas['F1'])
+    left_pipette.drop_tip()
+    
+    left_pipette.pick_up_tip()
+    left_pipette.mix(4, 30, canvas['G7'])
+    left_pipette.mix(4, 30, canvas['G6'])
+    left_pipette.mix(4, 30, canvas['G5'])
+    left_pipette.mix(4, 30, canvas['G4'])
+    left_pipette.mix(4, 30, canvas['G3'])
+    left_pipette.mix(4, 30, canvas['G2'])
+    left_pipette.mix(4, 30, canvas['G1'])
+    left_pipette.drop_tip()
+    
     #yellow_topup
     left_pipette.pick_up_tip()
     left_pipette.aspirate(280, palette['A4'])
@@ -464,10 +483,27 @@ def run(protocol: protocol_api.ProtocolContext):
     left_pipette.mix(4, 90, canvas['E10'])
     left_pipette.drop_tip()
 
+    water_volumes = [
+            30, 30, 30, 30, 30, 30, 30, 30,
+            30, 30, 30, 30, 30, 30, 30, 30,
+            30, 30, 30, 30, 30, 30, 30, 30,
+            30, 30, 30, 30, 30, 30, 30, 30,
+            30, 30, 30, 30, 30, 30, 30, 30,
+            30, 30, 30, 30, 30, 30, 30, 30,
+            30, 30, 30, 30, 30, 30, 30, 30,
+            30, 30, 30, 30, 30, 30, 30, 30,
+            30, 30, 30, 30, 30, 30, 30, 30,
+            30, 30, 30, 30, 30, 30, 30, 30,
+            30, 30, 30, 30, 30, 30, 30, 30,
+            30, 30, 30, 30, 30, 30, 30, 30,
+          ]
+
+    left_pipette.distribute(
+        water_volumes, 
+        palette['A12'], 
+        canvas.wells())
+
     #end
-
-
-# In[ ]:
 
 
 

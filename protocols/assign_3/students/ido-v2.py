@@ -40,9 +40,9 @@ def run(protocol: protocol_api.ProtocolContext):
 
     COLS = 12
     ROWS = "ABCDEFGH"
-    MAX_VOL = 300
+    MAX_VOL = 150
 
-    red_pal = palette[color['red']]
+    red_pal = palette[color['yellow']]
     green_pal = palette[color['green']]
     blue_pal = palette[color['blue']]
     pals = [red_pal, green_pal, blue_pal]
@@ -72,20 +72,15 @@ def run(protocol: protocol_api.ProtocolContext):
                         left_pipette.dispense(val, cell)
                 left_pipette.drop_tip()
 
-        # mix all tubes
-        left_pipette.pick_up_tip()
-        for i in range(start_row, end_row):
-            row = ROWS[i]
-            for col in range(COLS):
-                left_pipette.mix(3, MAX_VOL, canvas[row + str(col + 1)])
-        left_pipette.drop_tip()
 
     # paint first half of the flag
     ukraine_blue = "#3366ff"
     blue_vals = normalized_rgb(hex_to_rgb(ukraine_blue))
+    blue_vals = (0, 0, MAX_VOL)
     paint_rows(0, len(ROWS) / 2, blue_vals)
 
     # paint second half of the flag
     ukraine_yellow = "#fecb00"
     yellow_vals = normalized_rgb(hex_to_rgb(ukraine_yellow))
+    yellow_vals = (MAX_VOL, 0, 0)
     paint_rows(len(ROWS) / 2, len(ROWS), yellow_vals)
